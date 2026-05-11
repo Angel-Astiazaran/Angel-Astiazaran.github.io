@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - El servidor que se niega a morir | Ángel Astiazarán</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --accent-color: #e6f0ff;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #004494;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--white);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        article {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .lead {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #555;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            text-align: justify;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .reference {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
+            font-size: 0.85rem;
+            color: #777;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            article { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio Profesional</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio / CV</a>
+        <a href="blog.html" style="border-bottom: 2px solid white;">Blog Divulgativo</a>
+    </nav>
+
+    <main>
+        <article>
+            <h1>El servidor que se niega a morir: el secreto de la Alta Disponibilidad (y cómo puedes tenerla)</h1>
+            
+            <p class="lead">
+                ¿Alguna vez te has preparado para ver el episodio final de tu serie favorita justo en el minuto del estreno y te has preguntado por qué la plataforma no explota con millones de personas conectándose a la vez? La respuesta no es magia negra; el verdadero truco se llama <strong>Alta Disponibilidad</strong>.
+            </p>
+
+            <p>
+                Imagina que tienes un restaurante muy exitoso, pero con un solo cocinero. Si ese cocinero se resfría, el restaurante tiene que cerrar y los clientes se quedan sin cenar. En el mundo de la tecnología, a este cocinero solitario lo llamamos "punto único de fallo". Tradicionalmente, si el ordenador físico (el servidor) donde alojabas tu página web se averiaba, tu servicio desaparecía de internet hasta que alguien cambiara la pieza rota.
+            </p>
+
+            <p>
+                Aquí es donde entra en juego la Alta Disponibilidad mediante los <strong>clústeres</strong>. Un clúster es, básicamente, un equipo de servidores físicos trabajando juntos como si fueran uno solo. Es como tener cinco cocineros en la cocina: si uno de ellos tropieza, los otros cuatro absorben sus comandas al instante y el cliente en la mesa ni siquiera se da cuenta del accidente.
+            </p>
+
+            <p>
+                Para lograr esto, en mi día a día como Especialista IT y en mi Trabajo de Fin de Grado utilizo plataformas como <strong>Proxmox VE</strong>. Esta herramienta nos permite crear máquinas virtuales que viven dentro de los ordenadores físicos. Si el servidor principal sufre un apagón, Proxmox detecta el fallo de inmediato y mueve de forma transparente esas máquinas a otro servidor sano del clúster. Todo ocurre en milisegundos.
+            </p>
+
+            <p>
+                No se trata solo de una teoría espectacular, sino de una necesidad matemática. En un estudio académico de 2023 sobre arquitecturas de servidores, los investigadores demostraron que una estructura de múltiples servidores virtuales montada sobre Proxmox VE tiene una <strong>fiabilidad inmensamente superior</strong> frente a un servidor único tradicional. Al someter los sistemas a pruebas de estrés, el clúster logró mantener el servicio con una disponibilidad del 80,25%, mientras que el servidor único colapsó rápidamente ante la misma demanda.
+            </p>
+
+            <p>
+                Esa es la misma filosofía que utilizan Netflix, Amazon o tu banco para que sus sistemas no se caigan: repartir el peso, tener siempre un plan B y <strong>automatizar el rescate</strong>. 
+            </p>
+
+            <p>
+                La próxima vez que una web te cargue a la primera durante un evento masivo, recuerda que detrás hay un clúster trabajando a contrarreloj para esquivar el desastre. La innovación abierta permite que hoy cualquier empresa pueda implementar estas soluciones. ¿Te animarías a montar tu propio clúster para asegurar que tus proyectos nunca se apaguen?
+            </p>
+
+            <div class="reference">
+                Referencia: Single server-side and multiple virtual server-side architectures: Performance analysis on Proxmox VE for e-learning systems (2023).
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2026 Ángel Astiazarán. Creado para la asignatura Español Profesional y Académico (UPM).</p>
+    </footer>
+
+</body>
+</html>

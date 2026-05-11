@@ -3,86 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Profesional - Ángel Astiazarán</title>
-    <style>
-        :root {
-            --primary-color: #0056b3;
-            --accent-color: #e6f0ff;
-            --text-color: #333;
-            --bg-color: #f4f4f9;
-            --white: #ffffff;
-        }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: var(--primary-color);
-            color: var(--white);
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        nav {
-            background: #004494;
-            padding: 0.5rem 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: var(--white);
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover { text-decoration: underline; }
-
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background: var(--white);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        h2 { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; }
-        
-        .btn {
-            display: inline-block;
-            background: var(--primary-color);
-            color: var(--white);
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .btn:hover { background: #004494; }
-
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            color: #666;
-            font-size: 0.9rem;
-        }
-    </style>
+    <title>Ángel Astiazarán | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -92,50 +14,38 @@
     </header>
 
     <nav>
-        <a href="#presentacion">Sobre mí</a>
-        <a href="#curriculum">CV y LinkedIn</a>
-        <a href="#innovacion">Presentación</a>
+        <a href="index.html" style="border-bottom: 2px solid white;">Sobre mí</a>
+        <a href="cv.html">Currículum</a>
+        <a href="presentacion.html">Presentación</a>
         <a href="blog.html">Blog Divulgativo</a>
-        <a href="#perusall">Perusall</a>
+        <a href="perusall.html">Perusall</a>
     </nav>
 
     <main>
         <section id="presentacion">
             <h2>Carta de Presentación</h2>
             <p><strong>Estimado equipo de selección de Aubay:</strong></p>
-            <p>Me dirijo a ustedes con el propósito de presentar mi candidatura para la posición de Junior Software Engineer Backend. Como estudiante de último curso de Ingeniería Informática en la UPM y actual Especialista IT en Esferize, mi objetivo es aportar una visión técnica integral que combine el desarrollo con un conocimiento profundo de la infraestructura.</p>
-            <p>En mi trayectoria actual, he gestionado infraestructuras críticas en entornos híbridos, asegurando la estabilidad de los servicios. Considero que mi capacidad para automatizar procesos mediante Python y Bash scripting, con los que he logrado optimizar tareas operativas, es un valor añadido para entender el rendimiento del software desde el lado del servidor.</p>
-            <p>Actualmente centro mi TFG en la virtualización avanzada con Proxmox, gestionando el ciclo de vida de contenedores y máquinas virtuales en alta disponibilidad, conocimiento transferible a los ecosistemas de microservicios de Aubay.</p>
-        </section>
-
-        <section id="curriculum">
-            <h2>Currículum y Perfil Profesional</h2>
-            <p>Puedes consultar mi trayectoria completa y recomendaciones validadas en mi perfil profesional:</p>
-            <a href="https://www.linkedin.com/in/angel-astiazaran/" class="btn" target="_blank">Ver Perfil en LinkedIn</a>
             
-            <p style="margin-top: 2rem;">También puedes descargar mi CV en formato tradicional (PDF) optimizado para una lectura rápida:</p>
-            <a href="Curriculum_Angel_Astiazaran.pdf" class="btn" download>Descargar CV (PDF)</a>
-        </section>
-
-        <section id="innovacion">
-            <h2>Presentación: Innovación Tecnológica</h2>
-            <p><em>Próximamente: Vídeo de 10 minutos analizando un artículo de innovación en sistemas distribuidos.</em></p>
-            </section>
-
-        <section id="blog">
-            <h2>Blog Divulgativo</h2>
-            <p>He publicado un artículo sobre cómo la Alta Disponibilidad evita que los servicios digitales colapsen, utilizando Proxmox como base técnica.</p>
-            <a href="blog.html" class="btn">Leer artículo en el Blog</a>
-        </section>
-
-        <section id="perusall">
-            <h2>Trabajo en Perusall</h2>
-            <p>Resumen de mi participación y lecturas críticas realizadas durante el curso.</p>
+            <p>Me dirijo a ustedes con el propósito de presentar mi candidatura para la posición de <strong>Junior Software Engineer Backend</strong> en su sede de Esparraguera. Como estudiante de último curso de Ingeniería Informática en la Universidad Politécnica de Madrid (UPM) y actual Especialista IT en Esferize, mi objetivo es aportar una visión técnica integral que combine el desarrollo con un conocimiento profundo de la infraestructura de sistemas.</p>
+            
+            <p>En mi trayectoria actual, he gestionado infraestructuras críticas en entornos híbridos (Microsoft y Linux), asegurando la estabilidad de los servicios y manteniendo una operatividad superior al 99%. Considero que mi capacidad para automatizar procesos mediante <strong>Python y Bash scripting</strong>, con los que he logrado optimizar significativamente las tareas operativas, es un valor añadido para entender y mejorar el rendimiento del software desde el lado del servidor.</p>
+            
+            <p>Actualmente centro mi Trabajo de Fin de Grado (TFG) en la virtualización avanzada con <strong>Proxmox</strong>, gestionando el ciclo de vida de contenedores y máquinas virtuales en alta disponibilidad. Este conocimiento técnico es directamente transferible a los ecosistemas de microservicios y arquitecturas distribuidas que Aubay lidera en sectores tan exigentes como el bancario y el asegurador.</p>
+            
+            <p>Agradezco su tiempo y consideración al revisar este portfolio profesional. Quedo a su entera disposición para concertar una entrevista y profundizar en cómo mi perfil puede contribuir a sus objetivos de innovación.</p>
+            
+            <p>Atentamente,</p>
+            <p><strong>Ángel Astiazarán Gafo</strong></p>
+            
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="https://www.linkedin.com/in/angel-astiazaran/" class="btn" target="_blank">LinkedIn</a>
+                <a href="https://github.com/tu-usuario" class="btn" target="_blank">GitHub</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Ángel Astiazarán. Portfolio para la asignatura Español Profesional y Académico (UPM).</p>
+        <p>© 2026 Ángel Astiazarán. Portfolio profesional creado para la asignatura Español Profesional y Académico (UPM).</p>
     </footer>
 
 </body>
